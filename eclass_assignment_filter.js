@@ -9,18 +9,19 @@
 	   var tables = document.getElementsByClassName('list-table');
 	   var table = tables[0];
 	   var tr = table.getElementsByTagName('TR');
-	   for(var i = 1; i < tr.length; i++){
+	   for (var i = tr.length - 1; i >= 1; i--) {
 	       var td = tr[i].getElementsByTagName('TD');
 		   if (td[4].innerText == term) {
-		       alert(td[2].innerText);
-		       tr[i].style.backgroundColor = "yellow";
+		       //alert(td[2].innerText);
+		       //tr[i].style.backgroundColor = "yellow";
 		       //td[4].innerHTML = "찾았다.";
 		   }
 	       else
 		   {
-		       for (var j = 1; j < td.length; j++) {
-		           td[j].style.color = "white";
-		       }
+		       table.removeChild(tr[i]);
+		       //for (var j = 1; j < td.length; j++) {
+		       //    td[j].style.color = "white";
+		       //}
 		   }
 		   //else
 		   //{
