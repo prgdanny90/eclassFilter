@@ -12,7 +12,7 @@
         for (var i = 1; i < tr.length; i++) {
             var td = tr[i].getElementsByTagName('TD');
             if (td[4].innerText == term) {
-                alert(td[2].innerText);
+                //alert(td[2].innerText);
                 tr[i].style.backgroundColor = "yellow";
                 //td[4].innerHTML = "찾았다.";
             }
