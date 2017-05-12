@@ -11,10 +11,13 @@
 	   var tr = table.getElementsByTagName('TR');
 	   for(var i = 0; i < tr.length; i++){
 		   var td = tr[i].getElementsByTagName('TD');
-		   for(var j = 0; j < td.length; j++){
-			   if(td[j].innerHTML == term){
-				   td[j].innerHTML = "찾았다.";
-			   }
+		   if (td[4].innerHTML == term) {
+		       alert(td[2]);
+		       td[4].innerHTML = "찾았다.";
+		   }
+		   else
+		   {
+		       alert(i + "번째 는 완료된 항목" + td[2]);
 		   }
 	   }
 	   };
