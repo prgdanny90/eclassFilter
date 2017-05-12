@@ -18,7 +18,7 @@
 		   }
 	       else
 		   {
-		       table.removeChild(tr[i]);
+               table.parentNode.removeChild(tr[i]);
 		       //for (var j = 1; j < td.length; j++) {
 		       //    td[j].style.color = "white";
 		       //}
