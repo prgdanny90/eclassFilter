@@ -11,10 +11,16 @@
 	   var tr = table.getElementsByTagName('TR');
 	   for(var i = 1; i < tr.length; i++){
 	       var td = tr[i].getElementsByTagName('TD');
-	       alert(td[4].innerText);
 		   if (td[4].innerText == term) {
-		       alert(td[2]);
+		       alert(td[2].innerText);
+		       tr[i].style.backgroundColor = "yellow";
 		       //td[4].innerHTML = "찾았다.";
+		   }
+	       else
+		   {
+		       for (var j = 1; j < td.length; j++) {
+		           td[j].style.color = "white";
+		       }
 		   }
 		   //else
 		   //{
