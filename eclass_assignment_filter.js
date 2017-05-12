@@ -24,7 +24,7 @@
 (function () {
   var term = "미제출";
   var tables = document.getElementsByClassName('list-table');
-  var table = table[0];
+  var table = tables[0];
   var tr = table.getElementsByTagName('TR');
   for(var i = 0; i < tr.length; i++){
 	  var td = tr[i].getElementsByTagName('TD');
