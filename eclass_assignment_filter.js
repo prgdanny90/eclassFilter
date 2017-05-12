@@ -11,9 +11,9 @@
 	   var tr = table.getElementsByTagName('TR');
 	   for(var i = 0; i < tr.length; i++){
 		   var td = tr[i].getElementsByTagName('TD');
-		   if (td[4].innerHTML == term) {
+		   if (td[4].innerText == term) {
 		       alert(td[2]);
-		       td[4].innerHTML = "찾았다.";
+		       //td[4].innerHTML = "찾았다.";
 		   }
 		   else
 		   {
