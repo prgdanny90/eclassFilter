@@ -11,14 +11,14 @@
 	   var tr = table.getElementsByTagName('TR');
 	   for(var i = 0; i < tr.length; i++){
 		   var td = tr[i].getElementsByTagName('TD');
-		   if (td[4].innerText == term) {
+		   //if (td[4].innerText == term) {
 		       alert(td[2]);
 		       //td[4].innerHTML = "찾았다.";
-		   }
-		   else
-		   {
-		       alert(i + "번째 는 완료된 항목" + td[2]);
-		   }
+		   //}
+		   //else
+		   //{
+		   //    alert(i + "번째 는 완료된 항목" + td[2]);
+		   //}
 	   }
 	   };
    document.body.appendChild(btn);
