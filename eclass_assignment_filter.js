@@ -9,12 +9,13 @@
 	   var tables = document.getElementsByClassName('list-table');
 	   var table = tables[0];
 	   var tr = table.getElementsByTagName('TR');
-	   for(var i = 0; i < tr.length; i++){
-		   var td = tr[i].getElementsByTagName('TD');
-		   //if (td[4].innerText == term) {
+	   for(var i = 1; i < tr.length; i++){
+	       var td = tr[i].getElementsByTagName('TD');
+	       alert(td[4].innerText);
+		   if (td[4].innerText == term) {
 		       alert(td[2]);
 		       //td[4].innerHTML = "찾았다.";
-		   //}
+		   }
 		   //else
 		   //{
 		   //    alert(i + "번째 는 완료된 항목" + td[2]);
